@@ -8,21 +8,6 @@ import "@/components/carousel/carousel.css";
 import { motion } from "framer-motion";
 
 const Carousel = () => {
-  const pathVariants = {
-    initial: {
-      pathLength: 0,
-      opacity: 0,
-    },
-    animate: {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        duration: 1,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   const settings = {
     dots: false,
     infinite: true,
@@ -31,6 +16,31 @@ const Carousel = () => {
     speed: 1500,
     slidesToShow: 3.5,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
