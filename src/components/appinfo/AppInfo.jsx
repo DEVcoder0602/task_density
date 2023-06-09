@@ -7,7 +7,7 @@ const AppInfo = () => {
   return (
     <div className="flex justify-center overflow-hidden">
       <div className="bg-orange-50 rounded-2xl w-5/6 m-7 p-7">
-        <div className="logo relative" style={{ left: "92%", bottom: "12%" }}>
+        <div className="logo relative" style={{ left: "92%", bottom: "6%" }}>
           <Image
             src={flower}
             width={40}
@@ -52,11 +52,11 @@ const AppInfo = () => {
               <div className="bg-white rounded-full p-10 border-8 border-slate-100 self-start ">
                 <Image src={smiley} alt="" width={100} height={100} />
               </div>
-            </div>
             <div
               className="bg-orange-300 rounded-full"
               style={{ width: "300px", height: "300px" }}
             ></div>
+            </div>
           </div>
           <div className="card-text flex-1 self-center">
             <p>

@@ -1,10 +1,17 @@
+"use client";
 import Image from "next/image";
 import logo from "../../../public/logo.gif";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around m-7 items-center">
+    <motion.div
+      className="flex justify-around m-7 items-center"
+      initial={{ y: -300 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+    >
       <div className="logo">
         <Image src={logo} width={100} height={100} alt="" />
       </div>
@@ -32,7 +39,7 @@ const Navbar = () => {
           Download App
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

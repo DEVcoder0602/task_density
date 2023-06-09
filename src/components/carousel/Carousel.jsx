@@ -4,9 +4,25 @@ import emoji_1 from "../../../public/iconbeforecarousel.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "@/components/carousel/carousel.css"
+import "@/components/carousel/carousel.css";
+import { motion } from "framer-motion";
 
 const Carousel = () => {
+  const pathVariants = {
+    initial: {
+      pathLength: 0,
+      opacity: 0,
+    },
+    animate: {
+      pathLength: 1,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -20,8 +36,28 @@ const Carousel = () => {
   return (
     <div className="carousel m-7 p-7">
       <div className="carousel-heading flex m-5 p-5 items-center">
-        <h2 className="text-4xl font-bold px-2">Does this sound familiar...</h2>
-        <Image src={emoji_1} alt="" width={100} height={100} />
+        <motion.h2
+          className="text-4xl font-bold px-2 mx-12"
+          // initial={{ x: -100, scale: 0 }}
+          animate={{ x: [-400, 0], scale: [0, 1.25] }}
+          transition={{ delay: 0.8, duration: 2 }}
+        >
+          Does this sound familiar...
+        </motion.h2>
+        <motion.div
+          initial={{ x: window.innerWidth + 100, y: 0 }}
+          animate={{
+            x: [null, 400, 0],
+            y: [null, 50, 0],
+          }}
+          transition={{
+            duration: 2,
+            delay: 2,
+            // ease: "easeInOut",
+          }}
+        >
+          <Image src={emoji_1} alt="" width={100} height={100} />
+        </motion.div>
       </div>
       <div>
         <Slider {...settings}>
