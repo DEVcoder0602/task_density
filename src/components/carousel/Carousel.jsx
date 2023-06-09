@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "@/components/carousel/carousel.css";
 import { motion } from "framer-motion";
 
+
+// console.log(width);
+
 const Carousel = () => {
   const settings = {
     dots: false,
@@ -55,7 +58,7 @@ const Carousel = () => {
           Does this sound familiar...
         </motion.h2>
         <motion.div
-          initial={{ x: window.innerWidth + 100, y: 0 }}
+          initial={{ x: globalThis.window?.innerWidth + 100, y: 0 }}
           animate={{
             x: [null, 400, 0],
             y: [null, 50, 0],
@@ -71,66 +74,66 @@ const Carousel = () => {
       </div>
       <div>
         <Slider {...settings}>
-          <div class="max-w-sm rounded-2xl overflow-visible bg-sky-200 shadow-lg">
+          <div className="max-w-sm rounded-2xl overflow-visible bg-sky-200 shadow-lg">
             <div className="emoji text-3xl p-7">🧐</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-2xl bg-indigo-200 overflow-visible shadow-lg">
+          <div className="max-w-sm rounded-2xl bg-indigo-200 overflow-visible shadow-lg">
             <div className="emoji text-3xl p-7">😠</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-2xl -rotate-6 bg-indigo-600 my-5 text-white  shadow-lg">
+          <div className="max-w-sm rounded-2xl -rotate-6 bg-indigo-600 my-5 text-white  shadow-lg">
             <div className="emoji text-3xl p-7">😳</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-2xl bg-orange-300   overflow-visible shadow-lg">
+          <div className="max-w-sm rounded-2xl bg-orange-300   overflow-visible shadow-lg">
             <div className="emoji text-3xl p-7">🤨</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-2xl bg-yellow-100 overflow-visible shadow-lg">
+          <div className="max-w-sm rounded-2xl bg-yellow-100 overflow-visible shadow-lg">
             <div className="emoji text-3xl p-7">😒</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
               </p>
             </div>
           </div>
-          <div class="max-w-sm rounded-2xl bg-emerald-100 overflow-visible shadow-lg">
+          <div className="max-w-sm rounded-2xl bg-emerald-100 overflow-visible shadow-lg">
             <div className="emoji text-3xl p-7">😬</div>
-            <div class="px-6 pb-3">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
+            <div className="px-6 pb-3">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
