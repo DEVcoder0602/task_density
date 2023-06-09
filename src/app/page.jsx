@@ -1,5 +1,7 @@
 import Image from "next/image";
 import headerimg from "../../public/header.jpg";
+import Carousel from "@/components/carousel/Carousel";
+import AppInfo from "@/components/appinfo/AppInfo";
 
 export default function Home() {
   return (
@@ -8,7 +10,9 @@ export default function Home() {
         <Image src={headerimg} alt="" className="w-full rounded-3xl" />
       </div>
       <div className="info m-7 p-5 flex">
-        <h2 className="text-3xl text-center font-semibold flex-1">EQ beats IQ</h2>
+        <h2 className="text-3xl text-center font-semibold flex-1">
+          EQ beats IQ
+        </h2>
         <p className="flex-1 px-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quod
           mollitia ipsum molestiae quos rerum delectus nemo consequatur
@@ -22,6 +26,8 @@ export default function Home() {
           quaerat vel ipsa.
         </p>
       </div>
+      <Carousel />
+      <AppInfo />
     </div>
   );
 }

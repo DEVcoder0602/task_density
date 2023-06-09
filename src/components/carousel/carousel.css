@@ -1,0 +1,8 @@
+/* .slick-list {
+  overflow-x: clip !important;
+  overflow: inherit !important;
+} */
+
+.slick-next {
+  display: none !important;
+}
